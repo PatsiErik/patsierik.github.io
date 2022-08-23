@@ -2,13 +2,14 @@
 
 <html>
     <head>
-        <title>Elisa's Website</title>
+        <title>Patsi and Erik's Wedding</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="Art, Elisa, Barczak, New Zealand">
-        <meta name="description" content="Elisa Website and stuffs">
-        <link href="elisastyle.css" rel="stylesheet" type="text/css" />
-        <link rel="icon" type="image/jpg" href="images/peachymobile.jpg">
+        <meta name="keywords" content="Patsi, Erik, Wedding, Hochzeit, Casamento">
+        <meta name="description" content="Website for Patsi and Erik's wedding">
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link rel="icon" type="image/png" href="images/LOGO.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
@@ -18,28 +19,20 @@
     </head>
     <body>
         <div id="header">
-            <a href="index.html" target="_self" title="Home"><div id="title"><h1>Elisa Barczak</h1></div></a>
             <a href="index.html" target="_self" title="Home">
-                <div id="titim"><img src="images/peachymobile.jpg" style="border:0;" 
-                                     width="252" height="178" alt="Logo"></div>
+                <img src="images/Title.png" style="border:0;width: 25%;height: 25%" alt="Title">
             </a>
         </div>
 
-        <div id="section1">
-            <div id="leftbut">
-                <a href="gallery.html" target="_self">Gallery</a>
-            </div>
-            <div id="rightbut">
-                <a href="about.html" target="_self">About</a>
-            </div>
-        </div>
+        <div id="leftPanel">
+            <button class="titleButton" style="top: 32%" onclick="window.location.href = 'about.html'" title="About">About</button>
+        </div>      
 
-        <div id="section2">
-            <img class="fancybox" src ="images/table/_MG_9688.jpg" width="500" height="333" >
-        </div>
 
-        <div id="footer">
-            Copyright &copy; poo poo platter
+        <button class="titleButton" id="language" onclick="window.location.href = 'indexES.html'" >EN/DE/PT</button>
+
+        <div>
+            <img id="titleImage" src="images/Location.jpg" alt="Title Image" style="width: 45%;">
         </div>
 
     </body>
