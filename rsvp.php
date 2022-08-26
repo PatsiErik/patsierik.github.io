@@ -1,4 +1,18 @@
-<form id="fs-frm" name="basic-rsvp-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
+ <?php
+ 
+ if($_POST["message"]) {
+
+mail("patsi.erik@gmail.com", "Here is the subject line",
+
+$_POST["insert your message here"]. "From: patsi.erik@gmail.com");
+
+}
+
+?>
+
+
+
+<form id="fs-frm" name="basic-rsvp-form" accept-charset="utf-8" method="post" action="rsvp.php">
     <fieldset id="fs-frm-inputs">
         <label for="full-name">Full Name</label>
         <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
