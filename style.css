@@ -17,7 +17,7 @@
 
 #topText {
     font-family: mainFont;
-    font-size: 10vw;
+    font-size: 5vw;
 }
 
 #leftPanel{
@@ -107,33 +107,7 @@
 
 .titleButton{
     position: fixed;
-    left: 82%;
-    font-family: titleFont;
-    font-size: 2vw;
-    background:none;
-    border:none;
-    margin:0;
-    padding:0;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.titleButton2{
-    position: fixed;
-    left: 87%;
-    font-family: titleFont;
-    font-size: 2vw;
-    background:none;
-    border:none;
-    margin:0;
-    padding:0;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.titleButton3{
-    position: fixed;
-    left: 92%;
+    /* left: 82%; */
     font-family: titleFont;
     font-size: 2vw;
     background:none;
@@ -145,16 +119,6 @@
 }
 
 .titleButton:hover, #next:hover, #prev:hover {
-    color: lightgray;
-    text-decoration: none;
-}
-
-.titleButton2:hover, #next:hover, #prev:hover {
-    color: lightgray;
-    text-decoration: none;
-}
-
-.titleButton3:hover, #next:hover, #prev:hover {
     color: lightgray;
     text-decoration: none;
 }
