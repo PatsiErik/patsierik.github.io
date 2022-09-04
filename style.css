@@ -9,7 +9,7 @@
 }
 
 #header {
-    border-radius: 1px 50px;
+    border-radius: 1% 50%;
     background-color: white;
     color: black;
     text-align: center;    
@@ -125,6 +125,7 @@
 
 .sideButton{
     position: fixed;
+    top: 5%;
     font-family: titleFont;
     font-size: 2vw;
     background:none;
