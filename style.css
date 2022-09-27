@@ -1,190 +1,148 @@
-@font-face {
-    font-family: mainFont;
-    src: url(fonts/AlphaMacAOE.ttf);
+html { overflow-y: scroll; }
+* {
+  box-sizing: border-box;
 }
 
-@font-face {
-    font-family: titleFont;
-    src: url(fonts/ATL.ttf)
+@font-face {  
+  font-family: "mainFont";  
+src: url("fonts/AlphaMacAOE.ttf");
+}
+
+@font-face {  
+  font-family: "titleFont";  
+src: url("fonts/ATL.ttf");
 }
 
 #header {
-    border-radius: 1% 50%;
-    background-color: white;
-    color: black;
-    text-align: center;    
+  border-radius: 1% 50%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding:15px;
 }
 
 #topText {
-    font-family: mainFont;
-    font-size: 5vw;
+  font-family: mainFont;
+  font-size: 5vw;
 }
 
-#leftPanel{
-    position: fixed;
-    left: 8%;
+#leftPanel {
+  float: left;
+  width: 18%;
+  text-align: left;
+  padding-left:15px;
+  /* left: 8%; */
 }
 
-#backArrow{
-    position: fixed;
-    left: 5%;
-    top: 10%;
+#rightPanel {
+  float: right;
+  width: 15%;
+  text-align: center;
+  padding-right:20px;
 }
 
-#language{
-    position: fixed;
-    right: 15%;
-    top: 5%;
-    font-family: titleFont;
-    font-size: 2vw;
-    font-weight: bolder;
-    cursor: pointer;
+#backArrow {
+  position: fixed;
+  left: 5%;
+  top: 10%;
 }
 
-#titleImage{
-    position: fixed;
-    left: 27%;
-    top: 32%;
+/* #language {
+  position: absolute;
+  right: 15%;
+  font-family: titleFont;
+  font-size: 2vw;
+  font-weight: bolder;
+  cursor: pointer;
+} */
+
+#titleImage {
+  position: fixed;
+  left: 27%;
+  top: 32%;
+  text-align: center;
+  max-width:100%;
+  height:auto;
 }
 
-#workImage{
-    position: fixed;
-    /*    left: 25%;
-        top: 25%;*/
-    left: 30%;
-    top: 35%;
+#aboutImage {
+  position: fixed;
+  left: 1.5%;
+  top: 19%;
+  width: 27%;
+  max-width:100%;
+  height:auto;
 }
 
-#aboutImage{
-    position: fixed;
-    left: 34%;
-    top: 25%;
-    width: 30%;
+#aboutImage2 {
+  position: fixed;
+  left: 60%;
+  top: 43%;
+  width: 35%;
+  max-width:100%;
+  height:auto;
 }
 
-.artistImage{
-    position: fixed;
-    top: 27%;
-    width: 10%;
+#aboutParagraph {
+  /*position: fixed;*/
+  top: 15%;
+  padding-left: 35%;
+  padding-right: 35%;
+  font-family: titleFont;
+  font-size: 1.25vw;
+  text-align: center;
 }
 
-#artistParagraph1 {
-    position: fixed;
-    top: 45%;
-    left: 21.5%;
-    font-family: titleFont;
-    font-size: 2vw;
-    text-align: center;
-}
-
-#artistParagraph2 {
-    position: fixed;
-    top: 45%;
-    left: 43%;
-    font-family: titleFont;
-    font-size: 2vw;
-    text-align: center;
-}
-
-#artistParagraph3 {
-    position: fixed;
-    top: 45%;
-    left: 66%;
-    font-family: titleFont;
-    font-size: 2vw;
-    text-align: center;
-}
-
-#aboutParagraph{
-    position: fixed;
-    top: 70%;
-    padding-left: 35%;
-    padding-right: 35%;
-    font-family: titleFont;
-    font-size: 2vw;
-    text-align: center;
-}
-
-.titleButton{
-    position: fixed;
-    /* left: 82%; */
-    font-family: titleFont;
-    font-size: 2vw;
-    background:none;
-    border:none;
-    margin:0;
-    padding:0;
-    text-decoration: none;
-    cursor: pointer;
+.titleButton {
+  /*position: fixed;*/
+  color: black;
+  font-family: titleFont;
+  font-size: 2vw;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+  border: medium none;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
 }
 
 .titleButton:hover, #next:hover, #prev:hover {
-    color: lightgray;
-    text-decoration: none;
+  color: lightgray;
+  text-decoration: none;
 }
 
-.sideButton{
-    position: fixed;
-    top: 5%;
-    font-family: titleFont;
-    font-size: 2vw;
-    background:none;
-    border:none;
-    margin:0;
-    padding:0;
-    text-decoration: none;
-    cursor: pointer;
+.sideButton {
+  /*position: fixed;*/
+  /* top: 5%; */
+  color: black;
+  font-family: titleFont;
+  font-size: 2vw;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+  border: medium none;
+  margin: 15px;
+  padding: 15px;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .sideButton:hover, #next:hover, #prev:hover {
-    color: lightgray;
-    text-decoration: none;
+  color: lightgray;
+  text-decoration: none;
 }
 
-.social{
-    cursor: pointer;
+.social {
+  cursor: pointer;
 }
 
 .social:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
-#next{
-    position: fixed;
-    top: 55%;
-    right: 20%; 
-    cursor: pointer;
-    color: black;
-    font-weight: bold;
-    font-size: 5vw;
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .leftPanel {
+    width: 100%;
+  }
 }
 
-#prev {
-    position: fixed;
-    top: 55%;
-    left: 20%;
-    cursor: pointer;
-    color: black;
-    font-weight: bold;
-    font-size: 5vw;
-}
-
-#shopPara {
-    position: fixed;
-    top: 35%;
-    padding-left: 35%;
-    padding-right: 35%;
-    font-family: titleFont;
-    font-size: 2vw;
-    text-align: center;
-}
-
-#contactPara {
-    position: fixed;
-    top: 35%;
-    padding-left: 36%;
-    padding-right: 36%;
-    font-family: titleFont;
-    font-size: 2vw;
-    text-align: center;
-}

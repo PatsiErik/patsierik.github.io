@@ -29,17 +29,50 @@
             <button class="sideButton" style="top: 22%" onclick="window.location.href = 'rsvp_de.html'" title="RSVP">RSVP</button>
             <button class="sideButton" style="top: 32%" onclick="window.location.href = 'location_de.html'" title="Location">Location</button>
             <button class="sideButton" style="top: 42%" onclick="window.location.href = 'accommodation_de.html'" title="Unterkunft">Unterkunft</button>
-            <button class="sideButton" style="top: 52%" onclick="window.location.href = 'presents_de.html'" title="Geschenke">Geschenke</button>
-            <button class="sideButton" style="top: 62%" onclick="window.location.href = 'questions_de.html'" title="Mehr Fragen?">Mehr Fragen?</button>
+            <button class="sideButton" style="top: 52%" onclick="window.location.href = 'dresscode_de.html'" title="Dresscode">Dresscode</button>
+            <button class="sideButton" style="top: 62%" onclick="window.location.href = 'presents_de.html'" title="Geschenke">Geschenke</button>
+            <button class="sideButton" style="top: 72%" onclick="window.location.href = 'questions_de.html'" title="Mehr Fragen?">Mehr Fragen?</button>
         </div>      
 
-        <button class="titleButton" style="left: 80%; top:5%" id="language" onclick="window.location.href = 'index.html'" >EN</button>
-        <button class="titleButton" style="left: 80%; top:15%" id="language" onclick="window.location.href = 'index_DE.html'" >DE</button>
-        <button class="titleButton" style="left: 80%; top:25%" id="language" onclick="window.location.href = 'index_PT.html'" >PT</button>
+        <button class="titleButton" style="left: 80%; top:22%" id="language" onclick="window.location.href = 'index.html'" >EN</button>
+        <button class="titleButton" style="left: 80%; top:32%" id="language" onclick="window.location.href = 'index_DE.html'" >DE</button>
+        <button class="titleButton" style="left: 80%; top:42%" id="language" onclick="window.location.href = 'index_PT.html'" >PT</button>
 
         <div>
             <img id="titleImage" src="images/harbour.jpeg" alt="Title Image" style="width: 45%;top: 17%">
         </div>
+
+        <p id="demo" style="bottom:10%"></p>
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("May 27, 2023 16:30:00").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function () {
+
+                // Get today's date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Output the result in an element with id="demo"
+                document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                    + minutes + "m " + seconds + "s ";
+
+                // If the count down is over, write some text 
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "EXPIRED";
+                }
+            }, 1000);
+        </script>
 
     </body>
 </html>

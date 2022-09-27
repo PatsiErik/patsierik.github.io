@@ -1,41 +1,76 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
-    <head>
-        <title>Patsi and Erik's Wedding</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="Patsi, Erik, Wedding, Hochzeit, Casamento">
-        <meta name="description" content="Website for Patsi and Erik's wedding">
-        <meta name=”viewport” content=”width=device-width, initial-scale=1.0″>
-        <link href="style.css" rel="stylesheet" type="text/css" />
-        <link rel="icon" type="image/png" href="images/LOGO.png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
-        <script src="main.js"></script>
-        <link rel="stylesheet" type="text/css" media="screen" 
-              href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
-    </head>
-    <body>
-        <div id="header">
-            <div id="topText">Location</div>
-        </div>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-        <div id="backArrow">
-            <a href="index.html" title="Home">
-                <img class="social" src="images/arrow.png" style="border:0;width: 5%;height: 5%"  title="Home" alt="Back">
-            </a>
-        </div>
+.menu {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
 
-        <div>
-            <img id="titleImage" src="images/Location.JPG" alt="Title Image" style="width: 45%;top: 17%">
-        </div>
+.menu a {
+  background-color: #e5e5e5;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
+}
 
-    </body>
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+}
+
+.right {
+  background-color: #e5e5e5;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;color:#aaaaaa;">
+
+<div style="background-color:#e5e5e5;padding:15px;text-align:center;">
+  <h1>Hello World</h1>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    <a href="#">Link 4</a>
+  </div>
+
+  <div class="main">
+    <h2>Lorum Ipsum</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  </div>
+
+  <div class="right">
+    <h2>About</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+  </div>
+</div>
+
+<div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© copyright w3schools.com</div>
+
+</body>
 </html>
