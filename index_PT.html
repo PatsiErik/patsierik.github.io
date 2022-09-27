@@ -24,54 +24,60 @@
                 <img src="images/TitlePT.png" style="width: 25%;height: 25%" alt="Title">
             </a>
         </div>
+        
+        <div style="overflow:auto">
+            <div id="leftPanel" class="sideButton">
+                <button class="sideButton" style="top: 22%" onclick="window.location.href = 'rsvp_pt.html'" title="RSVP">RSVP</button>
+                <button class="sideButton" style="top: 32%" onclick="window.location.href = 'location_pt.html'" title="Local">Local</button>
+                <button class="sideButton" style="top: 42%" onclick="window.location.href = 'accommodation_pt.html'" title="Alojamento">Alojamento</button>
+                <button class="sideButton" style="top: 52%" onclick="window.location.href = 'dresscode_pt.html'" title="Traje">Traje</button>
+                <button class="sideButton" style="top: 62%" onclick="window.location.href = 'presents_pt.html'" title="Presentes">Presentes</button>
+                <button class="sideButton" style="top: 72%" onclick="window.location.href = 'questions_pt.html'" title="Mais Perguntas?">Mais Perguntas?</button>
+            </div>      
 
-        <div id="leftPanel">
-            <button class="sideButton" style="top: 22%" onclick="window.location.href = 'rsvp_pt.html'" title="RSVP">RSVP</button>
-            <button class="sideButton" style="top: 32%" onclick="window.location.href = 'location_pt.html'" title="Local">Local</button>
-            <button class="sideButton" style="top: 42%" onclick="window.location.href = 'accommodation_pt.html'" title="Alojamento">Alojamento</button>
-            <button class="sideButton" style="top: 52%" onclick="window.location.href = 'dresscode_pt.html'" title="Traje">Traje</button>
-            <button class="sideButton" style="top: 62%" onclick="window.location.href = 'presents_pt.html'" title="Presentes">Presentes</button>
-            <button class="sideButton" style="top: 72%" onclick="window.location.href = 'questions_pt.html'" title="Mais Perguntas?">Mais Perguntas?</button>
-        </div>      
+            <div id="rightPanel" class="titleButton">
+                <button onclick="window.location.href = 'index.html'" >EN</button>
+                <button onclick="window.location.href = 'index_DE.html'" >DE</button>
+                <button onclick="window.location.href = 'index_PT.html'" >PT</button>
+            </div>
 
-        <button class="titleButton" style="left: 80%; top:22%" id="language" onclick="window.location.href = 'index.html'" >EN</button>
-        <button class="titleButton" style="left: 80%; top:32%" id="language" onclick="window.location.href = 'index_DE.html'" >DE</button>
-        <button class="titleButton" style="left: 80%; top:42%" id="language" onclick="window.location.href = 'index_PT.html'" >PT</button>
+            <div>
+                <img id="titleImage" src="images/harbour.jpeg" alt="Title Image" style="width: 45%;top: 17%">
+            </div>
 
-        <div>
-            <img id="titleImage" src="images/harbour.jpeg" alt="Title Image" style="width: 45%;top: 17%">
+            <div id="timer">
+                <p id="demo"></p>
+                <script>
+                    // Set the date we're counting down to
+                    var countDownDate = new Date("May 27, 2023 16:30:00").getTime();
+
+                    // Update the count down every 1 second
+                    var x = setInterval(function () {
+
+                        // Get today's date and time
+                        var now = new Date().getTime();
+
+                        // Find the distance between now and the count down date
+                        var distance = countDownDate - now;
+
+                        // Time calculations for days, hours, minutes and seconds
+                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                        // Output the result in an element with id="demo"
+                        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                            + minutes + "m " + seconds + "s ";
+
+                        // If the count down is over, write some text 
+                        if (distance < 0) {
+                            clearInterval(x);
+                            document.getElementById("demo").innerHTML = "EXPIRED";
+                        }
+                    }, 1000);
+                </script>       
+            </div> 
         </div>
-
-        <p id="demo" style="bottom:10%"></p>
-        <script>
-            // Set the date we're counting down to
-            var countDownDate = new Date("May 27, 2023 16:30:00").getTime();
-
-            // Update the count down every 1 second
-            var x = setInterval(function () {
-
-                // Get today's date and time
-                var now = new Date().getTime();
-
-                // Find the distance between now and the count down date
-                var distance = countDownDate - now;
-
-                // Time calculations for days, hours, minutes and seconds
-                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                // Output the result in an element with id="demo"
-                document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-                    + minutes + "m " + seconds + "s ";
-
-                // If the count down is over, write some text 
-                if (distance < 0) {
-                    clearInterval(x);
-                    document.getElementById("demo").innerHTML = "EXPIRED";
-                }
-            }, 1000);
-        </script>
     </body>
 </html>
