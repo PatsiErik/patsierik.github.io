@@ -22,14 +22,14 @@ src: url("fonts/ATL.ttf");
   padding-top:1%;
 }
 
-#topText {
+.topText {
   font-family: Georgia;
   font-size: 5vw;
 }
 
 #leftPanel {
   float: left;
-  width: 25%;
+  width: 30%;
   text-align: left;
   padding-left:1%;
 }
@@ -54,7 +54,7 @@ src: url("fonts/ATL.ttf");
 
 #main {  
   float: left;
-  width: 50%;
+  width: 42.5%;
 }
 #titleImage {
   text-align: center;
@@ -143,8 +143,11 @@ src: url("fonts/ATL.ttf");
 
 @media only screen and (max-width: 620px) {
   /* For mobile phones: */
-  .leftPanel, .locationImage, .locationImage2 {
+  .locationImage, .locationImage2 {
     width: 100%;
+  }
+  .titleButton button, .sideButton button {
+    font-size: 2.5vw;
   }
 }
 
