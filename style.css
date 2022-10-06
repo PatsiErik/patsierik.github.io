@@ -16,15 +16,16 @@ src: url("fonts/ATL.ttf");
 #header {
   border-radius: 1% 50%;
   background-color: white;
-  color: rgb(238, 180, 74);
   text-align: center;
   padding-bottom:1%;
   padding-top:1%;
 }
 
 .topText {
-  font-family: Georgia;
-  font-size: 3vw;
+  font-family: Brush Script MT;
+  font-size: 4vw;
+  color: rgb(184, 155, 107);
+  text-align: center;
 }
 
 #leftPanel {
