@@ -13,9 +13,12 @@ src: url("fonts/AlphaMacAOE.ttf");
 src: url("fonts/ATL.ttf");
 }
 
+.backgroundColor {
+  background-color: rgba(184, 155, 107, 0.15);
+}
+
 #header {
   border-radius: 1% 50%;
-  background-color: white;
   text-align: center;
   padding-bottom:1%;
   padding-top:1%;
@@ -26,6 +29,12 @@ src: url("fonts/ATL.ttf");
   font-size: 4vw;
   color: rgb(184, 155, 107);
   text-align: center;
+}
+
+.boldText {
+  color: rgb(184, 155, 107);
+  font-weight: bold;
+  /* background-color: rgba(184, 155, 107, 0.2); */
 }
 
 #leftPanel {
@@ -87,8 +96,8 @@ src: url("fonts/ATL.ttf");
 }
 
 .aboutParagraph {
-  width: 70%;
-  padding-left: 30%;
+  width: 90%;
+  padding-left: 10%;
   padding-top: 2%;
   font-family: Georgia;
   font-size: 1.25vw;
