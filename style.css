@@ -16,7 +16,7 @@ src: url("fonts/ATL.ttf");
 #header {
   border-radius: 1% 50%;
   background-color: white;
-  color: black;
+  color: rgb(238, 180, 74);
   text-align: center;
   padding-bottom:1%;
   padding-top:1%;
@@ -24,7 +24,7 @@ src: url("fonts/ATL.ttf");
 
 .topText {
   font-family: Georgia;
-  font-size: 5vw;
+  font-size: 3vw;
 }
 
 #leftPanel {
@@ -85,8 +85,8 @@ src: url("fonts/ATL.ttf");
   height:auto;
 }
 
-#aboutParagraph {
-  width: 65%;
+.aboutParagraph {
+  width: 70%;
   padding-left: 30%;
   padding-top: 2%;
   font-family: Georgia;
@@ -147,6 +147,9 @@ src: url("fonts/ATL.ttf");
     width: 100%;
   }
   .titleButton button, .sideButton button {
+    font-size: 2.5vw;
+  }
+  .aboutParagraph {
     font-size: 2.5vw;
   }
 }
