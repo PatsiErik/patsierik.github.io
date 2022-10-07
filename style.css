@@ -4,13 +4,13 @@ html { overflow-y: scroll; }
 }
 
 @font-face {  
-  font-family: "mainFont";  
-src: url("fonts/AlphaMacAOE.ttf");
+  font-family: "classy";  
+src: url("Fonts/Stay Classy SLDT.ttf");
 }
 
 @font-face {  
-  font-family: "titleFont";  
-src: url("fonts/ATL.ttf");
+  font-family: "Gloria";  
+src: url("Fonts/GloriaHallelujah-Regular.ttf");
 }
 
 .backgroundColor {
@@ -25,7 +25,7 @@ src: url("fonts/ATL.ttf");
 }
 
 .topText {
-  font-family: Brush Script MT;
+  font-family: classy;
   font-size: 4vw;
   color: rgb(184, 155, 107);
   text-align: center;
@@ -99,7 +99,7 @@ src: url("fonts/ATL.ttf");
   width: 90%;
   padding-left: 10%;
   padding-top: 2%;
-  font-family: Georgia;
+  font-family: Gloria;
   font-size: 1.25vw;
   text-align: center;
 }
