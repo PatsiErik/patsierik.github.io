@@ -13,8 +13,18 @@ src: url("Fonts/Stay Classy SLDT.ttf");
 src: url("Fonts/GloriaHallelujah-Regular.ttf");
 }
 
+@font-face {  
+  font-family: "Autography";  
+src: url("Fonts/Autography.otf");
+}
+
+@font-face {  
+  font-family: "Song";  
+src: url("Fonts/Please\ write\ me\ a\ song.ttf");
+}
+
 .backgroundColor {
-  background-color: rgba(184, 155, 107, 0.15);
+  background-color: rgba(184, 155, 107, 0.05);
 }
 
 #header {
@@ -25,8 +35,8 @@ src: url("Fonts/GloriaHallelujah-Regular.ttf");
 }
 
 .topText {
-  font-family: classy;
-  font-size: 4vw;
+  font-family: Autography;
+  font-size: 6vw;
   color: rgb(184, 155, 107);
   text-align: center;
 }
@@ -99,8 +109,8 @@ src: url("Fonts/GloriaHallelujah-Regular.ttf");
   width: 90%;
   padding-left: 10%;
   padding-top: 2%;
-  font-family: Gloria;
-  font-size: 1.25vw;
+  font-family: Song;
+  font-size: 1.5vw;
   text-align: center;
 }
 
