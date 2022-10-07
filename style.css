@@ -82,6 +82,13 @@ src: url("Fonts/Please\ write\ me\ a\ song.ttf");
   height:auto;
 }
 
+.centralImage {
+  width: 100%;
+  /* text-align: center; */
+  padding-top:2%;
+  padding-left:30%;
+  padding-right:30%;
+}
 
 .locationImage {
   float: left;
@@ -108,7 +115,7 @@ src: url("Fonts/Please\ write\ me\ a\ song.ttf");
 .aboutParagraph {
   width: 90%;
   padding-left: 10%;
-  padding-top: 2%;
+  padding-top: 0%;
   font-family: Song;
   font-size: 1.5vw;
   text-align: center;
