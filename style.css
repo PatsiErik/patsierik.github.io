@@ -208,9 +208,8 @@ src: url("Fonts/Please\ write\ me\ a\ song.ttf");
     font-size: 16vw;
   }
   .sideButton button  {
-    padding-top: 16cm;
+    /* padding-top: 16cm; */
     font-size: 8vw;
-    margin: 5%;
   }
   .titleButton button  {
     font-size: 8vw;
