@@ -124,7 +124,7 @@ src: url("Fonts/Please\ write\ me\ a\ song.ttf");
 .titleButton button {
   /*position: fixed;*/
   color: black;
-  font-family: Georgia;
+  font-family: Song;
   font-size: 2vw;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
   border: medium none;
@@ -144,7 +144,7 @@ src: url("Fonts/Please\ write\ me\ a\ song.ttf");
   /*position: fixed;*/
   /* top: 5%; */
   color: black;
-  font-family: Georgia;
+  font-family: Song;
   font-size: 2vw;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
   border: medium none;
@@ -180,13 +180,13 @@ src: url("Fonts/Please\ write\ me\ a\ song.ttf");
     font-size: 6vw;
   }
   .topText {
-    font-size: 17vw;
+    font-size: 16vw;
   }
   .sideButton button  {
-    font-size: 10vw;
+    font-size: 8vw;
   }
   .titleButton button  {
-    font-size: 10vw;
+    font-size: 8vw;
   }
 
 }
