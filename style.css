@@ -203,7 +203,7 @@ src: url("Fonts/Please\ write\ me\ a\ song.ttf");
   }
   .aboutParagraph2 {
     font-size: 6vw;
-    /* padding-left: 4cm; */
+    padding-left: 50%; 
   }
   .topText {
     font-size: 16vw;
