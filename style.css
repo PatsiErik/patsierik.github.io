@@ -177,10 +177,10 @@ src: url("Fonts/Please\ write\ me\ a\ song.ttf");
     font-size: 2.5vw;
   }
   .aboutParagraph {
-    font-size: 3vw;
+    font-size: 6vw;
   }
   .topText {
-    font-size: 3vw;
+    font-size: 15vw;
   }
 }
 
