@@ -124,7 +124,7 @@ src: url("Fonts/Please\ write\ me\ a\ song.ttf");
   padding-left: 10%;
   padding-top: 0%;
   font-family: Song;
-  font-size: 1.5vw;
+  font-size: 2vw;
   text-align: center;
 }
 
@@ -196,24 +196,17 @@ src: url("Fonts/Please\ write\ me\ a\ song.ttf");
   }
 
   .titleButton button, .sideButton button {
-    font-size: 6vw;
+    font-size: 8vw;
   }
   .aboutParagraph {
     font-size: 6vw;
   }
   .aboutParagraph2 {
     font-size: 6vw;
-    padding-left: 4cm;
+    /* padding-left: 4cm; */
   }
   .topText {
     font-size: 16vw;
-  }
-  .sideButton button  {
-    /* padding-top: 16cm; */
-    font-size: 8vw;
-  }
-  .titleButton button  {
-    font-size: 8vw;
   }
 
 }
