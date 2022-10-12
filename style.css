@@ -167,10 +167,7 @@ src: url("Fonts/Please\ write\ me\ a\ song.ttf");
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
   cursor: pointer;
   margin: 1.5%;
-  padding: 0.5% 1%; */
-  /* float: left; */
-  /* text-align: center; */ */
-  /* transform: translateX(20%); */
+  padding: 0.5% 1%;
 }
 
 .flex-parent {
@@ -204,6 +201,11 @@ src: url("Fonts/Please\ write\ me\ a\ song.ttf");
     width: 100%;
   }
 
+  .centralImage {
+    padding-left: 20%;
+    padding-right:20%;
+    padding-bottom: 3%;
+  }
   .centralImage2 {
     padding-left: 20%;
     padding-right:20%;
@@ -220,7 +222,7 @@ src: url("Fonts/Please\ write\ me\ a\ song.ttf");
     font-size: 6vw;
   }
   .topText {
-    font-size: 16vw;
+    font-size: 14vw;
   }
 
 }
