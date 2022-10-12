@@ -24,7 +24,7 @@ src: url("Fonts/Please\ write\ me\ a\ song.ttf");
 }
 
 .backgroundColor {
-  background-color: rgba(184, 155, 107, 0.1);
+  background-color: rgba(184, 155, 107, 0.05);
 }
 
 #header {
