@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Patsi and Erik's Wedding</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Patsi, Erik, Wedding, Hochzeit, Casamento">
+        <meta name="description" content="Website for Patsi and Erik's wedding">
+        <meta name=”viewport” content=”width=device-width, initial-scale=1.0″>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link rel="icon" type="image/png" href="images/LOGO.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
+        <script src="main.js"></script>
+        <link rel="stylesheet" type="text/css" media="screen" 
+              href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
+    </head>
+    <body>
+        <div id="header">
+            <div class="topText">Patsi & Erik</div>
+        </div>
+
+        <div style="overflow:auto">
+            <div id="leftPanel" class="sideButton">
+                <button onclick="window.location.href = 'rsvp.html'" title="RSVP">RSVP</button>
+                <button onclick="window.location.href = 'location.html'" title="Location">Location</button>
+                <button onclick="window.location.href = 'accommodation.html'" title="Accommodation">Accommodation</button>
+                <button onclick="window.location.href = 'dresscode.html'" title="Dresscode">Dresscode</button>
+                <button onclick="window.location.href = 'presents.html'" title="Presents">Presents</button>
+                <button onclick="window.location.href = 'questions.html'" title="More Questions?">More Questions?</button> 
+            </div>      
+
+            <div id="rightPanel" class="titleButton">
+                <button onclick="window.location.href = 'index.html'" >EN</button>
+                <button onclick="window.location.href = 'index_DE.html'" >DE</button>
+                <button onclick="window.location.href = 'index_PT.html'" >PT</button>
+            </div>
+
+            <div id="main">
+                <img id="titleImage" src="images/harbour.jpeg" alt="Title Image">
+            </div>
+
+            <div id="timer">
+                <p id="demo"></p>
+                <script>
+                    // Set the date we're counting down to
+                    var countDownDate = new Date("May 27, 2023 16:30:00").getTime();
+
+                    // Update the count down every 1 second
+                    var x = setInterval(function () {
+
+                        // Get today's date and time
+                        var now = new Date().getTime();
+
+                        // Find the distance between now and the count down date
+                        var distance = countDownDate - now;
+
+                        // Time calculations for days, hours, minutes and seconds
+                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                        // Output the result in an element with id="demo"
+                        document.getElementById("demo").innerHTML = "Countdown: " + days + "days " + hours + "hours "
+                            + minutes + "mins " + seconds + "s ";
+
+                        // If the count down is over, write some text 
+                        if (distance < 0) {
+                            clearInterval(x);
+                            document.getElementById("demo").innerHTML = "EXPIRED";
+                        }
+                    }, 1000);
+                </script>       
+            </div> 
+        </div>
+    </body>
+</html>

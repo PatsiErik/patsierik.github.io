@@ -24,7 +24,7 @@ src: url("Fonts/Please\ write\ me\ a\ song.ttf");
 }
 
 .backgroundColor {
-  background-color: rgba(184, 155, 107, 0.05);
+  background-color: rgba(184, 155, 107, 0.1);
 }
 
 #header {
@@ -207,8 +207,8 @@ src: url("Fonts/Please\ write\ me\ a\ song.ttf");
     padding-bottom: 3%;
   }
   .centralImage2 {
-    padding-left: 25%;
-    padding-right:25%;
+    padding-left: 30%;
+    padding-right:30%;
     padding-bottom: 3%;
   }
 

@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>Patsi and Erik's Wedding</title>
+        <title>Patsi and Erik's Hochzeit</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="Patsi, Erik, Wedding, Hochzeit, Casamento">
@@ -23,59 +23,15 @@
             <div class="topText">Patsi & Erik</div>
         </div>
 
-        <div style="overflow:auto">
-            <div id="leftPanel" class="sideButton">
-                <button onclick="window.location.href = 'rsvp.html'" title="RSVP">RSVP</button>
-                <button onclick="window.location.href = 'location.html'" title="Location">Location</button>
-                <button onclick="window.location.href = 'accommodation.html'" title="Accommodation">Accommodation</button>
-                <button onclick="window.location.href = 'dresscode.html'" title="Dresscode">Dresscode</button>
-                <button onclick="window.location.href = 'presents.html'" title="Presents">Presents</button>
-                <button onclick="window.location.href = 'questions.html'" title="More Questions?">More Questions?</button> 
-            </div>      
+        <!-- <p align="center"><iframe src="https://free.timeanddate.com/countdown/i8jk3le0/n37/cf12/cm0/cu4/ct4/cs1/ca2/co0/cr0/ss0/cac000/cpc000/pcfff/tcfff/fn3/fs100/szw320/szh135/iso2023-05-27T16:30:00" allowtransparency="true" frameborder="0" width="116" height="29"></iframe></p> -->
 
-            <div id="rightPanel" class="titleButton">
-                <button onclick="window.location.href = 'index.html'" >EN</button>
-                <button onclick="window.location.href = 'index_DE.html'" >DE</button>
-                <button onclick="window.location.href = 'index_PT.html'" >PT</button>
-            </div>
 
-            <div id="main">
-                <img id="titleImage" src="images/harbour.jpeg" alt="Title Image">
-            </div>
-
-            <div id="timer">
-                <p id="demo"></p>
-                <script>
-                    // Set the date we're counting down to
-                    var countDownDate = new Date("May 27, 2023 16:30:00").getTime();
-
-                    // Update the count down every 1 second
-                    var x = setInterval(function () {
-
-                        // Get today's date and time
-                        var now = new Date().getTime();
-
-                        // Find the distance between now and the count down date
-                        var distance = countDownDate - now;
-
-                        // Time calculations for days, hours, minutes and seconds
-                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                        // Output the result in an element with id="demo"
-                        document.getElementById("demo").innerHTML = "Countdown: " + days + "days " + hours + "hours "
-                            + minutes + "mins " + seconds + "s ";
-
-                        // If the count down is over, write some text 
-                        if (distance < 0) {
-                            clearInterval(x);
-                            document.getElementById("demo").innerHTML = "EXPIRED";
-                        }
-                    }, 1000);
-                </script>       
-            </div> 
+        <div class="sideButton flex-parent jc-center">
+            <button onclick="window.location.href = 'homepage_EN.html'" >ENGLISH</button>
+            <button onclick="window.location.href = 'homepage_DE.html'" >DEUTSCH</button>
+            <!-- <button onclick="window.location.href = 'homepage_PT.html'" >PT</button> -->
         </div>
+        
+ 
     </body>
 </html>
