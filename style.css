@@ -27,6 +27,22 @@ src: url("Fonts/Please\ write\ me\ a\ song.ttf");
   background-color: rgba(184, 155, 107, 0.05);
 }
 
+
+.resized {
+  width: 100%; 
+  height: 90px; 
+  background-image: url("images/hintergrund2.jpg");
+  background-size: 300px 150px;
+  background-repeat: repeat-x;
+  /* border: 2px solid #999; */
+  }
+
+/* body {
+  background-repeat: no-repeat
+
+
+  } */
+  
 #header {
   border-radius: 1% 50%;
   text-align: center;
