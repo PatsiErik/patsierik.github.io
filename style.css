@@ -207,9 +207,9 @@ src: url("Fonts/Please\ write\ me\ a\ song.ttf");
     padding-bottom: 3%;
   }
   .centralImage2 {
-    padding-left: 30%;
-    padding-right:30%;
-    padding-bottom: 3%;
+    padding-left: 15%;
+    padding-right:15%;
+    padding-bottom: 7%;
   }
 
   .titleButton button, .sideButton button {
