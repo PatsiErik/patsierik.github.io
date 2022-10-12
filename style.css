@@ -99,11 +99,13 @@ src: url("Fonts/Please\ write\ me\ a\ song.ttf");
 }
 
 .locationImage {
-  float: left;
-  width: 25.5%;
-  text-align: left;
-  padding-left:1%;
+  width: 100%;
+  /* text-align: center; */
+  padding-top:2%;
+  padding-left:30%;
+  padding-right:30%;
 }
+
 #aboutImage {
   max-width:100%;
   height:auto;
@@ -167,7 +169,7 @@ src: url("Fonts/Please\ write\ me\ a\ song.ttf");
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
   cursor: pointer;
   margin: 1.5%;
-  padding: 0.5% 1%;
+  padding: 0.5% 1.5%;
 }
 
 .flex-parent {
@@ -198,10 +200,14 @@ src: url("Fonts/Please\ write\ me\ a\ song.ttf");
 @media only screen and (max-width: 620px) {
   /* For mobile phones: */
   .locationImage, .locationImage2 {
-    width: 100%;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right:10%;
+    padding-bottom: 7%;
   }
 
   .centralImage {
+    padding-top: 7%;
     padding-left: 20%;
     padding-right:20%;
     padding-bottom: 3%;
