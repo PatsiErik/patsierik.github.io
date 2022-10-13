@@ -198,13 +198,16 @@ src: url("Fonts/Please\ write\ me\ a\ song.ttf");
 
 
 .sideButton button:hover, #next:hover, #prev:hover {
-  color: rgb(184, 155, 107); */
+  color: rgb(184, 155, 107); 
   /* background-color: rgb(184, 155, 107); */
   text-decoration: none;
 }
 
 .social {
   cursor: pointer;
+  border:0;
+  width: 5%;
+  height: 5%;
 }
 
 .social:hover {
@@ -245,6 +248,10 @@ src: url("Fonts/Please\ write\ me\ a\ song.ttf");
   }
   .topText {
     font-size: 14vw;
+  }
+  .social {
+    width: 12%;
+    height: 12%;
   }
 
 }
