@@ -71,42 +71,39 @@
             <!-- </div> -->
             
             <br><br><br>
-            <p align="center"><iframe src="https://free.timeanddate.com/countdown/i8jk3le0/n37/cf12/cm0/cu4/ct4/cs1/ca2/co0/cr0/ss0/cac000/cpc000/pcfff/tcfff/fn3/fs100/szw320/szh135/iso2023-05-27T16:30:00" allowtransparency="true" frameborder="0" width="120" height="29"></iframe></p>
-
            
-            <!-- <div id="timer">
-                <p id="demo"></p>
-                <script>
-                    // Set the date we're counting down to
-                    var countDownDate = new Date("May 27, 2023 16:30:00").getTime();
+            <p id="demo" class="timer"></p>
+            <script>
+                // Set the date we're counting down to
+                var countDownDate = new Date("May 27, 2023 16:30:00").getTime();
 
-                    // Update the count down every 1 second
-                    var x = setInterval(function () {
+                // Update the count down every 1 second
+                var x = setInterval(function () 
+                {
+                    // Get today's date and time
+                    var now = new Date().getTime();
 
-                        // Get today's date and time
-                        var now = new Date().getTime();
+                    // Find the distance between now and the count down date
+                    var distance = countDownDate - now;
 
-                        // Find the distance between now and the count down date
-                        var distance = countDownDate - now;
+                    // Time calculations for days, hours, minutes and seconds
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-                        // Time calculations for days, hours, minutes and seconds
-                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    // Output the result in an element with id="demo"
+                    document.getElementById("demo").innerHTML = days + " Tage " + hours + " Std " + minutes + " Min " + seconds + " Sek ";
 
-                        // Output the result in an element with id="demo"
-                        document.getElementById("demo").innerHTML = "Countdown: " + days + "Tage " + hours + "h "
-                        + minutes + "m " + seconds + "s ";
+                    // If the count down is over, write some text 
+                    if (distance < 0) 
+                    {
+                        clearInterval(x);
+                        document.getElementById("demo").innerHTML = "EXPIRED";
+                    }
+                }, 1000);
+            </script>  
 
-                        // If the count down is over, write some text 
-                        if (distance < 0) {
-                            clearInterval(x);
-                            document.getElementById("demo").innerHTML = "EXPIRED";
-                        }
-                    }, 1000);
-                </script>       
-            </div>  -->
             <div id="backArrow">
                 <a href="index.html" title="Home">
                     <img class="social" src="images/arrow.png" title="Home" alt="Back">
