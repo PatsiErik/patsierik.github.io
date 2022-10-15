@@ -77,11 +77,6 @@ src: url("Fonts/Please\ write\ me\ a\ song.ttf");
   padding-right:1%;
 }
 
-#timer {
-  position: fixed;
-  bottom:1%;
-}
-
 #backArrow {
   position: fixed;
   left: 5%;
@@ -152,7 +147,7 @@ src: url("Fonts/Please\ write\ me\ a\ song.ttf");
   padding-left: 10%;
   padding-top: 0%;
   font-family: Song;
-  font-size: 1.5vw;
+  font-size: 2vw;
   text-align: center;
 }
 
@@ -214,6 +209,11 @@ src: url("Fonts/Please\ write\ me\ a\ song.ttf");
   opacity: 0.7;
 }
 
+.timer {
+  text-align: center;
+  font-family: Song;
+  font-size: 1.5vw;
+}
 
 
 @media only screen and (max-width: 620px) {
@@ -240,11 +240,11 @@ src: url("Fonts/Please\ write\ me\ a\ song.ttf");
   .titleButton button, .sideButton button {
     font-size: 6vw;
   }
-  .aboutParagraph {
+  .aboutParagraph, .aboutParagraph2 {
     font-size: 6vw;
   }
-  .aboutParagraph2 {
-    font-size: 6vw;
+  .timer {
+    font-size: 4vw;
   }
   .topText {
     font-size: 14vw;
