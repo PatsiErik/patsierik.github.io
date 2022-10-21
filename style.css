@@ -36,8 +36,8 @@ src: url("Fonts/Please\ write\ me\ a\ song.ttf");
   background-repeat: repeat-x;
   padding-top:0%;
   position: absolute;
-  left: 0%;
-  top: 0%;
+  left: 0px;
+  top: 0px;
   /* border: 2px solid #999; */
   }
 
